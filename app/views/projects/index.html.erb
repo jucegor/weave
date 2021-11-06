@@ -1,0 +1,16 @@
+<div>
+  <h1>All PROJECTS</h1>
+  <div class="d-flex">
+    <% @projects.each do |project| %>
+      <div class="card" style="width: 360px;">
+        <img src="https://images.pexels.com/photos/2280571/pexels-photo-2280571.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title"><%= project.name %></h5>
+          <p class="card-text"> Start date: <%= project.start_date%> End date: <%= project.end_date %></p>
+          <p> Estimated hours: <%= project.estimated_hours %> </p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>
